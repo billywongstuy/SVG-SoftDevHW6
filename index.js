@@ -9,7 +9,7 @@ var addCircle = function(e) {
     var c = document.createElementNS("http://www.w3.org/2000/svg","circle");
 
     c.setAttribute("r","20");
-    c.setAttribute("fill","red");
+    c.setAttribute("fill","rgba(255,0,0,0.5)");
     c.setAttribute("stroke","black");
     
     c.setAttribute("cx",x);
