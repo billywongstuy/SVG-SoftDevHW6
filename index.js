@@ -55,5 +55,7 @@ var clear = function(e) {
     while (pic.lastChild) {
 	pic.removeChild(pic.lastChild);
     }
+    prevX = null;
+    prevY = null;
 };
 clearB.addEventListener("click",clear);
