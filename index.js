@@ -16,7 +16,7 @@ var addCircle = function(e) {
     c.setAttribute("cy",y);
     
     pic.appendChild(c);
-}
+};
 
 
 
@@ -30,10 +30,8 @@ var addLine = function(e) {
     l.setAttribute("stroke-width",1);
     
     pic.appendChild(l);
-
-    console.log("line adding");
     
-}
+};
 
 
 var addStuff = function(e) {
@@ -43,7 +41,18 @@ var addStuff = function(e) {
     }
     prevX = e.offsetX;
     prevY = e.offsetY;
-}
+};
 
 
 pic.addEventListener("click",addStuff);
+
+
+var clearB = document.getElementById("clear");
+var clear = function(e) {
+    while (pic.lastChild) {
+	pic.removeChild(pic.lastChild);
+    }
+};
+
+
+clearB.addEventListener("click",clear);
